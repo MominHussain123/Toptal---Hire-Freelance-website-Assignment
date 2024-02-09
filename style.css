@@ -21,7 +21,7 @@
 
 }
 .logo{
-   color: rgb(3, 9, 80);
+   color:#080c6c;
    font-size: 40px;
    font-weight: bold;
    font-family: 'Protest Guerrilla', sans-serif;
@@ -41,7 +41,7 @@
 
 }
 .highlight{
-    background-color: rgba(75, 249, 6, 0.746);
+    background-color: #05947c;
     padding: 10px 30px;
 }
 
@@ -289,77 +289,64 @@ font-family: 'Bree Serif', serif;
 
 
 /* footer section */
+
 .footer{
-   
-    background-color: #fffdfd;
     margin-top: 100px;
-    height: 120vh;
+    justify-content: space-around;
+    background-color: rgb(246, 249, 249);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container-grid{
-    display: grid;
-    margin-top: 30px;
-    grid-template-columns: repeat(4,250px);
-    justify-content:center;
-    height: 500px;
-    padding-top: 20px;
-    gap: 20px;
-   
+      display: grid;
+      grid-template-columns: repeat(4,200px);
+      justify-content: space-around;
+}
+.container-grid h1{
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.container-grid a{
+    display: block;
+    padding-bottom: 20px;
+    color:gray;
+    margin-top: 10px;
+}
+.heading{
+   padding: 10px 40px;
+    color: #fff;
     
 }
-.footer a{
-    display: block;
-   margin-top: 25px;
-    color: #635d5d;
+.heading .logo{
+    color:#080c6c;
 }
-
-.footer .logo{
-    display: inline;
-    font-size: 40px;
-    margin-left: 40px;
+.heading br{
+    display: none;
 }
-footer h1{
-    font-size: 15px;
-    margin-top: 30px;
-    padding-bottom: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 50px;
-}
-.heading span{
-    margin-right: 300px;
-    margin-top: 30px;
-    color: blue;
-}
-.heading img{
-    width: 250px;
+.heading .icons{
+    float: right;
 }
 .heading i{
+    color: #080c6c;
     padding: 15px;
-       border:2px solid rgb(3, 28, 107) ;
-       margin-left: 10px;
-       border-radius: 100px;
-       font-size: 25px;
-       color: #080c6c;
+    border: #080c6c 2px solid;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-left: 5px;
 }
-.heading .fa-chart-simple{
-    color: rgb(24, 157, 234);
+
+
+.heading .elagance{
+    color: #142bfa;
+}
+.heading .elagance .fa-chart-simple{
+    font-size: 50px;
+    color: #03afe8;
+   
+    padding: none;
     border: none;
-    padding: 0;
-    font-size: 40px ;
-
-
-} 
-.heading a{
-    color: #030c3e;
+    
+    
 }
-
-
 /* footer section */
 
 
@@ -407,15 +394,6 @@ footer h1{
         grid-template-columns: repeat(2,400px);
 
     }
-    .footer{
-        height: 230vh;
-    }
-    .heading{
-        margin-top:450px;
-    }
-    .heading span{
-        margin-right: 30px;
-    }
     .card img{
         width: 400px;
     }
@@ -430,9 +408,7 @@ footer h1{
     .login1 .fa-bars{
         display: inline-block;
     }
-    .container-grid{
-        grid-template-columns: repeat(2,400px);
-    }
+    
 }
 
 @media (max-width:932px){
@@ -458,9 +434,7 @@ footer h1{
     .card img{
         width: 400px;
     }
-    .container-grid{
-        grid-template-columns: repeat(2,350px);
-    }
+   
 }
 @media (max-width:824px){
     .about{
@@ -473,20 +447,7 @@ footer h1{
     .card img{
         width: 350px;
     }
-    .container-grid{
-        grid-template-columns: repeat(2,300px);
-    }
-    .heading{
-        display: flex;
-        flex-direction: column;
-       
-    }
-    .heading span{
-        display: block;
-        padding: 10px;
-        margin-right: 0;
-        margin-top: 0;
-    }
+
 }
 @media (max-width:715px){
     .about{
@@ -496,20 +457,11 @@ footer h1{
     .service{
         grid-template-columns: repeat(1,450px);
     }
-    .footer{
-        height: 350vh;
-    }
-    .heading{
-        margin-top: 1050px;
-    }
    
     .card img{
         width:450px ;
     }
-    .container-grid{
-        grid-template-columns: repeat(1,400px);
-        row-gap: 0px;
-    }
+
 }
 
 @media (max-width:620px){
@@ -527,7 +479,59 @@ footer h1{
     .card img{
         width:360px;
     }
+
+}
+
+@media (max-width:1100px){
+    .container-grid{
+        grid-template-columns: repeat(2,200px);
+    }
+
+}
+@media(max-width:850px){
+    .container-grid{
+        grid-template-columns: repeat(2,200px);
+    }
+    
+
+   
     .container-grid{
         grid-template-columns: repeat(1,300px);
+        
+    }
+    .heading{
+        text-align: center;
+    }
+    .heading .icons{
+        float: none;
+    }
+    .heading br{
+        display: inline-block;
+    }
+    .heading i{
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+@media  (max-width:500px){
+    
+    .container-grid{
+        grid-template-columns: repeat(1,200px);
+        
+    }
+    .heading i{
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 8px;
+    }
+    .heading{
+        text-align: center;
+    }
+    .heading .icons{
+        float: none;
+    }
+    .heading br{
+        display: inline-block;
     }
 }
